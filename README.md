@@ -25,11 +25,10 @@ go-is-prime/
 ## How It Works  
 ### 1. Worker Pool Creation  
 ```go  
-numWorkers := runtime.NumCPU() * 2  
-for i := 1; i <= numWorkers; i++ {  
-    wg.Add(1)  
-    go is_prime(numChan, i, &wg)  
-}  
+for i := 1; i <= runtime.NumCPU(); i++ {
+    wg.Add(1)
+    go is_prime(numChan, i, &wg)
+}
 ```  
 ### 2. Task Distribution  
 - Producer sends 200 large numbers to the buffered channel  
