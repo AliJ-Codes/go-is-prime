@@ -35,7 +35,7 @@ for i := 1; i <= runtime.NumCPU(); i++ {
 - Workers consume numbers concurrently  
 - Each worker checks for primality using an intentionally slow algorithm  
 
-#### 3. Synchronization  
+### 3. Synchronization  
 - WaitGroup ensures all workers complete  
 - Closing the channel signals the end of tasks  
 - The main thread waits for all processing to finish  
