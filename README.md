@@ -15,8 +15,8 @@ This project offers hands-on learning of concurrency concepts:
 - Synchronous Execution: Uses sync.WaitGroup for proper synchronization  
 - Performance Timing: Measures execution time for comparison  
 
-# Project Structure  
-text  
+# Project Structure 
+
 go-is-prime/  
 ├── main.go              # Main implementation  
 ├── README.md            # This file  
